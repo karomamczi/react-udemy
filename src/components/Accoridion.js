@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import './Accordion.css';
 
 const Accordion = ({ items }) => {
   const [activeIndex, setActiveIndex] = useState(null);
