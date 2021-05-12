@@ -33,6 +33,12 @@ const Dropdown = ({ options, selected, onSelectedChange }) => {
         </option>
       );
     });
+
+  const textStyle = {
+    color: selected.value,
+    fontWeight: 'bold',
+  };
+
   return (
     <div ref={ref} className="ui form">
       <div className="field">
@@ -47,6 +53,9 @@ const Dropdown = ({ options, selected, onSelectedChange }) => {
             {renderedOptions}
           </div>
         </div>
+      </div>
+      <div style={textStyle} className="text">
+        Text is {selected.value}
       </div>
     </div>
   );
