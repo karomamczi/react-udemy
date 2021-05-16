@@ -26,12 +26,7 @@ const Accordion = ({ items }) => {
     );
   });
 
-  return (
-    <ul className="ui styled accordion">
-      {renderedItems}
-      <h1>{activeIndex}</h1>
-    </ul>
-  );
+  return <ul className="ui styled accordion">{renderedItems}</ul>;
 };
 
 export default Accordion;
