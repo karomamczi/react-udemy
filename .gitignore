@@ -24,3 +24,4 @@ yarn-error.log*
 
 # keys
 src/key.js
+src/clientId.js
