@@ -10,7 +10,7 @@ class Button extends Component {
         {(color) => (
           <button className={`ui button ${color}`}>
             <LanguageContext.Consumer>
-              {(language) => translations[language].SUBMIT}
+              {({ language }) => translations[language].SUBMIT}
             </LanguageContext.Consumer>
           </button>
         )}
